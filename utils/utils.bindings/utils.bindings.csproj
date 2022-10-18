@@ -41,7 +41,6 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
-
     <Reference Include="System.Reactive.Core">
       <HintPath>..\..\packages\Rx-Core.2.0.20823\lib\$(Platform)\System.Reactive.Core.dll</HintPath>
     </Reference>
@@ -52,7 +51,6 @@
       <HintPath>..\..\packages\Rx-Linq.2.0.20823\lib\$(Platform)\System.Reactive.Linq.dll</HintPath>
     </Reference>
   </ItemGroup>
-
   <ItemGroup>
     <Compile Include="..\~cfg\AssemblyInfo.global.cs">
       <Link>Properties\AssemblyInfo.global.cs</Link>
@@ -61,16 +59,16 @@
     <Compile Include="BindingExtensions.cs" />
     <Compile Include="NotifyPropertyChangedBase.cs" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\utils.diagnostics\utils.diagnostics.csproj">
       <Project>{C89D83CA-C0FA-4573-A63E-F716DD628696}</Project>
       <Name>utils.diagnostics</Name>
     </ProjectReference>
   </ItemGroup>
-
   <ItemGroup>
-    <None Include="packages.config" />
+    <PackageReference Include="Rx-Linq">
+      <Version>2.0.20823</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
