@@ -117,12 +117,12 @@ namespace odm.ui.activities {
 				if(x509.IssuerDN == null){
 					ret = "Self signed";
 				}else{
-					var subscr = x509.IssuerDN.GetValues(X509Name.CN);
+					var subscr = x509.IssuerDN.GetValueList(X509Name.CN);
 					ret = "CN: ";
 					subscr.ForEach(val => {
 						ret += val.ToString() + " ";
 					});
-					var subscrCa = x509.IssuerDN.GetValues(X509Name.Name);
+					var subscrCa = x509.IssuerDN.GetValueList(X509Name.Name);
 					if (subscrCa.Count != 0) {
 						ret = ret + " Name: ";
 						subscr.ForEach(val => {
