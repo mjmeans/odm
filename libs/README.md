@@ -2,7 +2,7 @@
 
 ## "bccrypto-net-1.7-src-ext" :
 The original source for this library is no longer available. The project folder was removed and replaced with the official NuGet package maintained by a BouncyCastle dev. To get it:
-- NuGet comamnd: "NuGet package NuGet\Install-Package BouncyCastle -Version 1.7.0". 
+- NuGet command: "PM> NuGet\Install-Package Portable.BouncyCastle -Version 1.7.0.2". 
 
 ## "ffmpeg-git-a5c1a0c" : 
 The original source for this library is no longer available and it is not avaiable on NuGet. However, it is available from an official GitHub repo. To get this version:
